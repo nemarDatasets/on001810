@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on001810-blue)](https://doi.org/10.82901/nemar.on001810)
+
 Overview
 --------
 AB_tDCS-EEG: EEG data from participants who performed an attentional blink (AB) task before, during and after transcranial Direct Current Stimulation (tDCS). They visited the lab twice (complete data for 40 participants; some did only one session); on each visit they received either anodal or cathodal tDCS.
