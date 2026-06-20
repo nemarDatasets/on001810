@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "EEG study of the attentional blink; before, during, and after transcranial Direct Current Stimulation (tDCS)",
+  "description": "This dataset comprises concurrent EEG and transcranial direct current stimulation (tDCS) recordings from 40 participants performing an attentional blink task. Participants completed two laboratory sessions approximately one week apart, receiving either anodal or cathodal tDCS (1 mA, 20 minutes) while EEG was recorded before, during, and after stimulation. The dataset documents the physiological effects of tDCS on neural correlates of attention and provides a resource for investigating artifact characteristics in concurrent tDCS-EEG recordings.",
+  "methods_description": "EEG was recorded during an attentional blink task in three blocks per visit (pre-tDCS, during tDCS, post-tDCS), each approximately 20 minutes long. tDCS was applied at 1 mA intensity for 20 minutes with 1-minute ramp-up and ramp-down periods, using a 7×5 mm electrode montage centered over F3 (anode or cathode) and right forehead/Fp2 (cathode or anode). Two visits were conducted approximately one week apart with counterbalanced anodal and cathodal stimulation conditions.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -10,12 +12,39 @@
     "K. Richard Ridderinkhof": {},
     "Heleen A. Slagter": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds001810.v1.1.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "transcranial direct current stimulation"
+    },
+    {
+      "term": "attentional blink"
+    },
+    {
+      "term": "concurrent tDCS-EEG"
+    },
+    {
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+    },
+    {
+      "term": "visual attention"
+    },
+    {
+      "term": "artifact characterization"
+    },
+    {
+      "term": "tDCS artifacts"
+    },
+    {
+      "term": "artifact removal"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1016/j.neuroimage.2016.03.065",
       "identifier_type": "DOI",
@@ -35,6 +64,11 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on001810",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds001810.v1.1.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -44,13 +78,13 @@
       "award_title": "Research Talent Grant"
     }
   ],
+  "resource_type_specific": "fMRI Dataset",
   "modalities": [
     "func",
     "eeg"
   ],
-  "resource_type_specific": "fMRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "117.8 GB (2001 files)"
   ],
   "formats": [
     ".bdf",
@@ -65,32 +99,8 @@
     ".txt",
     ".vhdr",
     ".vmrk",
+    ".yml",
     ".zip"
   ],
-  "description": "This dataset comprises concurrent EEG and transcranial direct current stimulation (tDCS) recordings from 40 participants (with complete data for all two sessions; some participants completed only one session) performing an attentional blink task. Participants completed two laboratory visits approximately one week apart, during which EEG was recorded before, during, and after either anodal or cathodal tDCS (1 mA, 20 minutes). The dataset provides a comprehensive resource for investigating the effects of tDCS on attentional processing and the challenges of concurrent tDCS-EEG recording, including detailed documentation of electrode placement, artifact characteristics, and trigger codes.",
-  "methods_description": "EEG was recorded during an attentional blink task in three blocks per visit (pre-tDCS, during tDCS, post-tDCS), each approximately 20 minutes long. tDCS was applied at 1 mA intensity for 20 minutes with 1-minute ramp-up and ramp-down periods using a 7×5 mm electrode montage centered over F3 and a second electrode over the right forehead (approximately Fp2). Participants completed two visits one week apart, receiving either anodal or cathodal stimulation in counterbalanced order.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "transcranial direct current stimulation"
-    },
-    {
-      "term": "attentional blink"
-    },
-    {
-      "term": "concurrent stimulation"
-    },
-    {
-      "term": "attention"
-    },
-    {
-      "term": "neurostimulation"
-    },
-    {
-      "term": "visual attention"
-    }
-  ],
-  "source_hash": "ddab700e6afe7f5702a90ff65d18dd31f9c22cb8e2ebd4514e856d3fbdcedf9a"
+  "source_hash": "4b2bcb388bc508a32d40e3d6634a922c95546f33fb0e9319826a1dc375edb34a"
 }
