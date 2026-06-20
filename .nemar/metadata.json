@@ -1,36 +1,96 @@
 {
   "version": "2.0",
-  "dataset_id": "on001810",
-  "source": "openneuro",
-  "source_id": "ds001810",
+  "pipeline_stage": "enriched",
   "title": "EEG study of the attentional blink; before, during, and after transcranial Direct Current Stimulation (tDCS)",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Leon C. Reteig": {},
     "Lionel A. Newman": {},
     "K. Richard Ridderinkhof": {},
     "Heleen A. Slagter": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds001810.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2016.03.065",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2018.10.025",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on001810",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on001810",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "v1.2.0-dev",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "NWO Research Talent Grant 406-12-079"
+      "funder_name": "NWO",
+      "award_number": "406-12-079",
+      "award_title": "Research Talent Grant"
     }
   ],
-  "acknowledgements": "Daphne Box and Esther van der Giessen for assistance with data collection"
+  "modalities": [
+    "func",
+    "eeg"
+  ],
+  "resource_type_specific": "fMRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".csv",
+    ".eeg",
+    ".gitattributes",
+    ".json",
+    ".m",
+    ".mat",
+    ".md",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk",
+    ".zip"
+  ],
+  "description": "This dataset comprises concurrent EEG and transcranial direct current stimulation (tDCS) recordings from 40 participants (with complete data for all two sessions; some participants completed only one session) performing an attentional blink task. Participants completed two laboratory visits approximately one week apart, during which EEG was recorded before, during, and after either anodal or cathodal tDCS (1 mA, 20 minutes). The dataset provides a comprehensive resource for investigating the effects of tDCS on attentional processing and the challenges of concurrent tDCS-EEG recording, including detailed documentation of electrode placement, artifact characteristics, and trigger codes.",
+  "methods_description": "EEG was recorded during an attentional blink task in three blocks per visit (pre-tDCS, during tDCS, post-tDCS), each approximately 20 minutes long. tDCS was applied at 1 mA intensity for 20 minutes with 1-minute ramp-up and ramp-down periods using a 7×5 mm electrode montage centered over F3 and a second electrode over the right forehead (approximately Fp2). Participants completed two visits one week apart, receiving either anodal or cathodal stimulation in counterbalanced order.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "transcranial direct current stimulation"
+    },
+    {
+      "term": "attentional blink"
+    },
+    {
+      "term": "concurrent stimulation"
+    },
+    {
+      "term": "attention"
+    },
+    {
+      "term": "neurostimulation"
+    },
+    {
+      "term": "visual attention"
+    }
+  ],
+  "source_hash": "ddab700e6afe7f5702a90ff65d18dd31f9c22cb8e2ebd4514e856d3fbdcedf9a"
 }
