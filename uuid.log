@@ -2,7 +2,7 @@
 25607bf8-a3ae-4118-8746-47e358f2ff26 s3-PUBLIC timestamp=1559044131.056588863s
 4e74937b-513d-4caf-bcb3-df64d84e2fb4 s3-PRIVATE timestamp=1553216066.111648398s
 69f88f82-6b1b-4b62-9ba5-89f85450bcf6 nemar-s3 timestamp=1781987479s
-ac6f552e-66f3-45b7-b0ae-85480cc87697 yahya@yahyas-mcm:/private/var/folders/yh/v431j0015bq2_32ydhg5kvnm0000gn/T/nemar-key-registration-dbAAjT/on001810 timestamp=1789402700s
+ac6f552e-66f3-45b7-b0ae-85480cc87697 fleet-key-registration timestamp=1789402704s
 e7252e38-0196-4d6c-9b37-212c36fe7649 runner@runnervm7b5n9:/tmp/nemar-import-on001810-u07Jf0/on001810 timestamp=1781987472s
 e9c77649-c938-4c71-801c-2bce83511676 root@6edf7b096e23:/datalad/ds001810 timestamp=1553190379.853873923s
 fe90e244-9136-4ce3-948e-efc863583358 runner@runnervm7b5n9:/tmp/nemar-finalize-on001810-7tyMF5/on001810-finalize timestamp=1781987963s
