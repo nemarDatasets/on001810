@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "EEG study of the attentional blink; before, during, and after transcranial Direct Current Stimulation (tDCS)",
-  "description": "This dataset comprises concurrent EEG and transcranial direct current stimulation (tDCS) recordings from 40 participants performing an attentional blink task. Participants completed two laboratory sessions approximately one week apart, receiving either anodal or cathodal tDCS (1 mA, 20 minutes) while EEG was recorded before, during, and after stimulation. The dataset documents the physiological effects of tDCS on neural correlates of attention and provides a resource for investigating artifact characteristics in concurrent tDCS-EEG recordings.",
-  "methods_description": "EEG was recorded during an attentional blink task in three blocks per visit (pre-tDCS, during tDCS, post-tDCS), each approximately 20 minutes long. tDCS was applied at 1 mA intensity for 20 minutes with 1-minute ramp-up and ramp-down periods, using a 7×5 mm electrode montage centered over F3 (anode or cathode) and right forehead/Fp2 (cathode or anode). Two visits were conducted approximately one week apart with counterbalanced anodal and cathodal stimulation conditions.",
+  "description": "EEG recordings from participants performing an attentional blink task before, during, and after transcranial direct current stimulation (tDCS). Each participant visited the lab twice, receiving anodal or cathodal stimulation over F3 with a return electrode over the right forehead, with complete data for 40 participants. The dataset supports study of concurrent tDCS-EEG artifacts and of stimulation effects on attentional blink event-related responses.",
+  "methods_description": "Each of two visits, about one week apart, included three ~20-minute EEG recordings: pre-tDCS, during tDCS, and post-tDCS. tDCS was delivered at 1 mA for 20 minutes with 1-minute ramp-up and ramp-down, using 7x5 cm rubber electrodes over F3 and right forehead (Fp2). Data were recorded in BioSemi BDF format and converted to BrainVision format using FieldTrip. Channels blocked by the tDCS electrodes are marked as bad in the channels files.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -17,31 +17,23 @@
       "term": "EEG"
     },
     {
-      "term": "transcranial direct current stimulation"
+      "term": "Transcranial Direct Current Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D065908"
     },
     {
       "term": "attentional blink"
     },
     {
+      "term": "Attention",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001288"
+    },
+    {
       "term": "concurrent tDCS-EEG"
     },
     {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
-    },
-    {
-      "term": "visual attention"
-    },
-    {
-      "term": "tDCS artifacts"
-    },
-    {
-      "term": "neurostimulation"
-    },
-    {
-      "term": "brain stimulation"
+      "term": "event-related potentials"
     }
   ],
   "related_identifiers": [
@@ -61,14 +53,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on001810",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds001810.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on001810",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -78,13 +70,12 @@
       "award_title": "Research Talent Grant"
     }
   ],
-  "resource_type_specific": "fMRI Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
-    "func",
     "eeg"
   ],
   "sizes": [
-    "117.8 GB (2001 files)"
+    "110 GB (2001 files)"
   ],
   "formats": [
     ".bdf",
